@@ -1,0 +1,179 @@
+/* Estilos generales del nav */
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 220px;
+}
+
+/* Lista sin estilo de marcadores y centrado */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces de navegación */
+nav a {
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 12px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces de navegación */
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6f61;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+.experiencia{
+    margin-top: 20px;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Efecto de selección del enlace activo */
+nav a.active {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Contenedor de video */
+.entrada-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 1px 1px 15px black;
+    height: 500px; /* Ajusta la altura para que no ocupe toda la pantalla */
+}
+
+/* Video de fondo */
+.entrada-video {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover; /* Asegura que el video cubra el contenedor sin deformarse */
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+   
+    border-bottom: 5px solid white; /* Aplica un borde visible en la parte inferior del video */
+}
+
+
+
+
+/* Contenedor principal centrado */
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin: 10px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 50px;
+    max-height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .yo-section {
+    display: flex;
+    font-family: "Titillium Web", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  .yo-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .yo-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .yo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .yo-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .tarjeta {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05);
+  }
+  
+  .tarjeta__imagen img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tarjeta__title {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  
+  .formulario{
+    margin: 120px;
+  }
+
+/* Diseño responsivo para el menú en pantallas pequeñas */

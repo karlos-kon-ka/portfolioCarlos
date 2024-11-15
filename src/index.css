@@ -1,0 +1,49 @@
+/* Estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column; /* Hace que los hijos (contenido y footer) se organicen en una columna */
+    background: radial-gradient(rgb(148, 148, 209), rgb(151, 151, 150));
+  }
+  
+  /* El contenido principal debe tomar el espacio disponible */
+  .main-content {
+    flex: 1; /* Este estilo hace que el contenido principal ocupe todo el espacio disponible */
+  }
+  
+  /* Estilos del footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Asegura que el footer se pegue al fondo */
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Deshabilitar subrayado en enlaces */
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Deshabilitar selección de texto en toda la página */
+* {
+  user-select: none; /* Evita que el texto sea seleccionado */
+}
+
+/* Opcional: si deseas que los elementos dentro de un contenedor específico también sean no seleccionables */
+.no-select {
+  user-select: none; /* No se podrá seleccionar el texto en este contenedor */
+}
