@@ -1,0 +1,119 @@
+[
+    {
+     "titulo": "Automatización Pyhton",
+     "fecha": "05/02/2024",
+
+     "descripcion": "",
+
+     "fuente": "Wallapop",
+
+     "precio": "130 €"
+
+     
+    
+    },
+    {
+        "titulo": "CMR",
+        "fecha": "12/03/2024",
+   
+        "descripcion": "",
+   
+        "fuente": "Wallapop",
+   
+        "precio": "170 €"
+   
+        
+       
+       },
+       {
+        "titulo": "Administración de Sistemas",
+        "fecha": "",
+   
+        "descripcion": "",
+   
+        "fuente": "Wallapop",
+   
+        "precio": "120 €"
+   
+        
+       
+       },
+       {
+        "titulo": "Trabajos para Alumnos (Clases)",
+        "fecha": "",
+   
+        "descripcion": "",
+   
+        "fuente": "",
+   
+        "precio": "Milanuncios"
+   
+        
+       
+       },
+       {
+        "titulo": "Análisis y Colaboracion para App Android",
+        "fecha": "",
+   
+        "descripcion": "",
+   
+        "fuente": "",
+   
+        "precio": ""
+   
+        
+       
+       },
+       {
+        "titulo": "TPV (Punto de Venta)",
+        "fecha": "03/10/24",
+   
+        "descripcion": "",
+   
+        "fuente": "Wallapop",
+   
+        "precio": "550€"
+   
+        
+       
+       },
+       {
+        "titulo": "Retoque WEB",
+        "fecha": "04/12/23",
+   
+        "descripcion": "",
+   
+        "fuente": "Milanuncios",
+   
+        "precio": "50 €"
+   
+        
+       
+       },
+       {
+        "titulo": "Instalación de AJAX",
+        "fecha": "20/05/24",
+   
+        "descripcion": "",
+   
+        "fuente": "Wallapop",
+   
+        "precio": "40 €"
+   
+        
+       
+       },
+       {
+        "titulo": "",
+        "fecha": "",
+   
+        "descripcion": "",
+   
+        "fuente": "",
+   
+        "precio": ""
+   
+        
+       
+       }
+]

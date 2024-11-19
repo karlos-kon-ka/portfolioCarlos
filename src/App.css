@@ -1,17 +1,25 @@
-/* Estilos generales del nav */
-nav {
-    background-color: #1a1a1a;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Arial', sans-serif;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    margin-bottom: 220px;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1000;
 }
 
-/* Lista sin estilo de marcadores y centrado */
+.nav.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.nav.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -21,7 +29,7 @@ nav ul {
     padding: 0;
 }
 
-/* Enlaces de navegación */
+
 nav a {
     color: #f0f0f0;
     font-size: 1.1rem;
@@ -31,7 +39,6 @@ nav a {
     transition: color 0.3s ease;
 }
 
-/* Efecto hover en los enlaces de navegación */
 nav a::before {
     content: "";
     position: absolute;
@@ -84,7 +91,43 @@ nav a.active {
     border-bottom: 5px solid white; /* Aplica un borde visible en la parte inferior del video */
 }
 
+/* Estilos para el fade-in de la flecha */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+/* Estilo general para el botón */
+.arrow-btn {
+  background-color: #333;
+  border-radius: 50%;
+  padding: 15px;
+  user-select: none; /* No se podrá seleccionar el texto en este contenedor */
+  opacity: 0; /* Comienza invisible */
+  animation: fadeIn 1s forwards; /* Aparece gradualmente */
+  transition: opacity 0.5s ease; /* Suaviza el cambio de opacidad */
+  cursor: pointer;
+  border: none; /* Eliminar borde por defecto */
+  outline: none; /* Eliminar el cuadro de enfoque azul */
+}
+
+/* Estilo cuando el usuario pasa el ratón */
+.arrow-btn:hover {
+  opacity: 0.8;
+  user-select: none; /* No se podrá seleccionar el texto en este contenedor */
+  outline: none; /* Asegura que no haya borde cuando se pasa el ratón */
+  /* Puedes agregar efectos como cambio de color o tamaño aquí */
+}
+
+/* Evitar que el subrayado o el cuadro de enfoque aparezca al hacer clic */
+.arrow-btn:focus {
+  outline: none; /* Elimina el cuadro azul del enfoque */
+  box-shadow: none; /* Si aparece algún efecto visual de enfoque, eliminarlo */
+}
 
 
 /* Contenedor principal centrado */
@@ -170,10 +213,71 @@ nav a.active {
     font-weight: 500;
     color: #555;
   }
+.rama-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+
+
+.rama-items {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.rama-item {
+  background-color: #b96262;
+  border-radius: 10px;
+  color: #f0f0f0;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.685);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
+  justify-content: space-between;
+}
+
+.rama-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+.rama-item:active {
+  cursor: grabbing;
+}
+
+.rama-icon {
+  font-size: 40px;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .rama-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
   
   .formulario{
-    margin: 120px;
+    margin: 80px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px black;
   }
 
 /* Diseño responsivo para el menú en pantallas pequeñas */

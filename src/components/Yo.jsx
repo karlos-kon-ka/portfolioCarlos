@@ -38,6 +38,7 @@ function Yo() {
         <h2 className="yo-title">FULLSTACK DEVELOPER</h2>
         <div>
           <div>
+            <h3>Carlos P.</h3>
             <p>
               Más de 1 año de experiencia en la creación de Aplicaciones FullStack.
             </p>
@@ -45,14 +46,16 @@ function Yo() {
           </div>
           <div>
             <p>
-              Cerrando y Negociando acuerdos beneficiosos, tanto para mis clientes, como su Presupuesto.
+              Colaborando y Negociando acuerdos beneficiosos, tanto para mis clientes, como su Presupuesto.
             </p>
 
           </div>
         </div>
       </div>
+      <h3>Encuentrame en:</h3>
       
       <div className="yo-cards">
+        
         {platforms.map((platform, index) => (
           <div key={platform.name} className="tarjeta" ref={(el) => (cardsRef.current[index] = el)}>
             <div className="tarjeta__imagen">
@@ -62,6 +65,7 @@ function Yo() {
           </div>
         ))}
       </div>
+      
     </section>
   );
 }
