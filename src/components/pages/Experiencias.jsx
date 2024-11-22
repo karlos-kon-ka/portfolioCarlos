@@ -41,7 +41,7 @@ function Experiencias() {
           align="center"
           gutterBottom
         >
-          Trabajos como Freelancer
+          Trabajos Realizados
         </Typography>
 
         <Grid container spacing={4} justifyContent="center">

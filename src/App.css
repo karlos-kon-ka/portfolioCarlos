@@ -1,5 +1,6 @@
 .nav {
   position: fixed;
+  font-family: "PT Sans", sans-serif;
   top: 0;
   left: 0;
   right: 0;
@@ -61,13 +62,13 @@ nav a:hover::before {
     width: 100%;
 }
 
-/* Efecto de selección del enlace activo */
+
 nav a.active {
     color: #ff6f61;
     font-weight: bold;
 }
 
-/* Contenedor de video */
+
 .entrada-container {
     position: relative;
     overflow: hidden;
@@ -76,7 +77,6 @@ nav a.active {
     height: 500px; /* Ajusta la altura para que no ocupe toda la pantalla */
 }
 
-/* Video de fondo */
 .entrada-video {
     width: 100%;
     border-radius: 5px;
@@ -91,7 +91,12 @@ nav a.active {
     border-bottom: 5px solid white; /* Aplica un borde visible en la parte inferior del video */
 }
 
-/* Estilos para el fade-in de la flecha */
+.contacto-section{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -101,7 +106,7 @@ nav a.active {
   }
 }
 
-/* Estilo general para el botón */
+
 .arrow-btn {
   background-color: #333;
   border-radius: 50%;
@@ -111,26 +116,26 @@ nav a.active {
   animation: fadeIn 1s forwards; /* Aparece gradualmente */
   transition: opacity 0.5s ease; /* Suaviza el cambio de opacidad */
   cursor: pointer;
-  border: none; /* Eliminar borde por defecto */
-  outline: none; /* Eliminar el cuadro de enfoque azul */
+  border: none;
+  outline: none; 
 }
 
-/* Estilo cuando el usuario pasa el ratón */
+
 .arrow-btn:hover {
   opacity: 0.8;
-  user-select: none; /* No se podrá seleccionar el texto en este contenedor */
-  outline: none; /* Asegura que no haya borde cuando se pasa el ratón */
-  /* Puedes agregar efectos como cambio de color o tamaño aquí */
+  user-select: none; 
+  outline: none; 
+  
 }
 
-/* Evitar que el subrayado o el cuadro de enfoque aparezca al hacer clic */
+
 .arrow-btn:focus {
-  outline: none; /* Elimina el cuadro azul del enfoque */
-  box-shadow: none; /* Si aparece algún efecto visual de enfoque, eliminarlo */
+  outline: none; 
+  box-shadow: none; 
 }
 
 
-/* Contenedor principal centrado */
+
 .carousel-container {
     max-width: 100%;
     margin: 0 auto;
@@ -189,10 +194,10 @@ nav a.active {
   }
   
   .tarjeta {
-    background: #ffffff;
+    
     padding: 8px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
     overflow: hidden;
     transition: transform 0.3s ease;
   }
@@ -214,6 +219,7 @@ nav a.active {
     color: #555;
   }
 .rama-container {
+  font-family: "Manrope", sans-serif;
   max-width: 100%;
   margin: 0 auto;
   padding: 50px;
@@ -261,15 +267,12 @@ nav a.active {
 }
 
 
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .rama-items {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
-}
+
 
   
   .formulario{
@@ -279,5 +282,64 @@ nav a.active {
     border-radius: 12px;
     box-shadow: 1px 1px 10px black;
   }
+  .carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin: 10px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 30px;
+    max-height: 120px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-image:hover {
+    transform: scale(1.05);
+  }
+  .yo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dos columnas dinámicas */
+    gap: 8px; /* Espaciado entre tarjetas */
+    padding: 16px;
+  }
 
-/* Diseño responsivo para el menú en pantallas pequeñas */
+  
+  .tarjeta {
+    
+    padding: 8px;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05);
+  }
+  
+  .tarjeta__imagen img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita espacios extra en imágenes */
+  }
+  
+  .tarjeta__title {
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+
+
+
+
+}
+
+

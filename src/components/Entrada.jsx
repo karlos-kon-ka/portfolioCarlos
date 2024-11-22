@@ -48,8 +48,9 @@ function Entrada() {
       </div>
       <section>
         <Herramientas />
-        <Rama />
+        
         <Yo />
+        <Rama />
         
       </section>
     </>

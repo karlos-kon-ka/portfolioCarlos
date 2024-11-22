@@ -5,15 +5,15 @@ body {
     height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
     display: flex;
     flex-direction: column; /* Hace que los hijos (contenido y footer) se organicen en una columna */
-    background: radial-gradient(rgb(148, 148, 209), rgb(151, 151, 150));
+    background: radial-gradient(rgb(170, 142, 116), rgb(230, 230, 152));
   }
   
-  /* El contenido principal debe tomar el espacio disponible */
+ 
   .main-content {
-    flex: 1; /* Este estilo hace que el contenido principal ocupe todo el espacio disponible */
+    flex: 1; 
   }
   
-  /* Estilos del footer */
+  
   .footer {
     background-color: #333;
     color: #fff;

@@ -9,6 +9,7 @@ const Carrousel = () => {
     { src: '/img/npm.png', alt: 'NPM' },
     { src: '/img/ex.png', alt: 'Express' },
     { src: '/img/py.png', alt: 'Python' },
+    { src: '/img/php.png', alt: 'php' },
     { src: '/img/linux.png', alt: 'Linux' },
     { src: '/img/docker.png', alt: 'Docker' },
     { src: '/img/bash.png', alt: 'Bash' },

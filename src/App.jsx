@@ -1,47 +1,43 @@
-import { useState, useEffect } from 'react';
-import Nav from './components/Nav';
-import Entrada from './components/Entrada';
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Experiencias from './components/pages/Experiencias';
-import Contacto from './components/pages/Contacto';
-import Footer from './components/Footer';
+import { useState, useEffect, lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
+// Lazy Loading de componentes
+const Nav = lazy(() => import("./components/Nav"));
+const Entrada = lazy(() => import("./components/Entrada"));
+const Experiencias = lazy(() => import("./components/pages/Experiencias"));
+const Contacto = lazy(() => import("./components/pages/Contacto"));
+const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   const [isNavVisible, setIsNavVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        // Deslizar hacia abajo, ocultar el nav
-        setIsNavVisible(false);
-      } else {
-        // Si el usuario está en la parte superior, mostrar el nav
-        setIsNavVisible(true);
-      }
+      setIsNavVisible(window.scrollY <= 50);
     };
 
-    // Agregar listener de scroll
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    // Limpiar el listener al desmontar el componente
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Entrada />} />
-        <Route path="/experiencias" element={<Experiencias />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
-      
-      {/* Aquí aplicamos la clase de animación según la visibilidad */}
-      <Nav isVisible={isNavVisible} />
+      {/* Suspense envuelve todo para manejar cargas de forma segura */}
+      <Suspense fallback={<div className="loading">Cargando...</div>}>
+        <Nav isVisible={isNavVisible} />
+        
+        <Routes>
+          <Route path="/" element={<Entrada />} />
+          <Route path="/experiencias" element={<Experiencias />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      </Suspense>
     </>
   );
 }

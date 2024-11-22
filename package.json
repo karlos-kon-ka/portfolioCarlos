@@ -16,7 +16,7 @@
     "@mui/material": "^6.1.7",
     "@mui/styled-engine": "^6.1.6",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^11.11.11",
+    "framer-motion": "^11.11.17",
     "gsap": "^3.12.5",
     "lazy-load": "^0.0.2",
     "portfolio": "file:",

@@ -29,6 +29,7 @@ function Yo() {
     { name: 'Milanuncios', imgUrl: '/img/mil.png' },
     { name: 'LinkedIn', imgUrl: '/img/link.png' },
     { name: 'Malt', imgUrl: '/img/malt.png' },
+    { name: 'Up', imgUrl: '/img/up.png' },
   ];
 
   return (
@@ -61,7 +62,7 @@ function Yo() {
             <div className="tarjeta__imagen">
               <img src={platform.imgUrl} alt={platform.name} />
             </div>
-            <h3 className="tarjeta__title">{platform.name}</h3>
+            
           </div>
         ))}
       </div>
