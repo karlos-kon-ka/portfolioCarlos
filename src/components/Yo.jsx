@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import Typewriter from 'react-typewriter-effect';
+import { Suspense } from 'react';
+
 
 function Yo() {
   const cardsRef = useRef([]);
@@ -39,7 +42,16 @@ function Yo() {
         <h2 className="yo-title">FULLSTACK DEVELOPER</h2>
         <div>
           <div>
-            <h3>Carlos P.</h3>
+          <div className="centered-text">
+        <Suspense fallback={<div>Cargando efecto...</div>}>
+          <Typewriter
+            text="CARLOS .P .G"       // El texto que deseas que se muestre
+            cursorColor="black"      // Color del cursor
+            speed={100}              // Velocidad de la escritura
+            typingDelay={1000}       // Retraso antes de empezar a escribir
+          />
+        </Suspense>
+      </div>
             <p>
               Más de 1 año de experiencia en la creación de Aplicaciones FullStack.
             </p>

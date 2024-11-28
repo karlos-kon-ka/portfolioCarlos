@@ -3,7 +3,7 @@
      "titulo": "Automatización Pyhton",
      "fecha": "05/02/2024",
 
-     "descripcion": "",
+     "descripcion": "Cliente que se dedica al Desarrollo, necesitaba automatizar tareas de tablas en Google Shetts. Creo un script que descarga mas de 500 datos de 1 fila y concatena segun la necesidad del cliente, con otra fola.",
 
      "fuente": "Wallapop",
 
@@ -16,7 +16,7 @@
         "titulo": "CMR",
         "fecha": "12/03/2024",
    
-        "descripcion": "",
+        "descripcion": "Me encargue de crear un CRUD funcional, para el cliente. Utilize PHP con Bootstrap con MySQL.",
    
         "fuente": "Wallapop",
    
@@ -27,9 +27,9 @@
        },
        {
         "titulo": "Administración de Sistemas",
-        "fecha": "",
+        "fecha": "04/09/24",
    
-        "descripcion": "",
+        "descripcion": "Trabajador de MUM.es me contacta, para ayudar a localizar el error de su servidor.",
    
         "fuente": "Wallapop",
    
@@ -40,48 +40,9 @@
        },
        {
         "titulo": "Trabajos para Alumnos (Clases)",
-        "fecha": "",
+        "fecha": "22/02/24",
    
-        "descripcion": "",
-   
-        "fuente": "",
-   
-        "precio": "Milanuncios"
-   
-        
-       
-       },
-       {
-        "titulo": "Análisis y Colaboracion para App Android",
-        "fecha": "",
-   
-        "descripcion": "",
-   
-        "fuente": "",
-   
-        "precio": ""
-   
-        
-       
-       },
-       {
-        "titulo": "TPV (Punto de Venta)",
-        "fecha": "03/10/24",
-   
-        "descripcion": "",
-   
-        "fuente": "Wallapop",
-   
-        "precio": "550€"
-   
-        
-       
-       },
-       {
-        "titulo": "Retoque WEB",
-        "fecha": "04/12/23",
-   
-        "descripcion": "",
+        "descripcion": "Clonaciones de WEB's, muy simple.",
    
         "fuente": "Milanuncios",
    
@@ -91,10 +52,37 @@
        
        },
        {
+        "titulo": "Análisis y Colaboracion para App Android",
+        "fecha": "15/09/24",
+   
+        "descripcion": "Cliente con APP acabada, pide una ayuda con APACHE CORDOVA.",
+   
+        "fuente": "Milanuncios",
+   
+        "precio": "100 €"
+   
+        
+       
+       },
+       {
+        "titulo": "TPV (Punto de Venta)",
+        "fecha": "03/10/24",
+   
+        "descripcion": "Trabajo intenso, con Electron Js, para crear una app de escritorio, realizada para un pequeño local, necesité de Mongo DB, Express js y Electron Js.",
+   
+        "fuente": "Wallapop",
+   
+        "precio": "550€"
+   
+        
+       
+       },
+       
+       {
         "titulo": "Instalación de AJAX",
         "fecha": "20/05/24",
    
-        "descripcion": "",
+        "descripcion": "Estudienate me contacta para un reparo rapido, necesitaba de AJAX en su aplicación Flask/Python.",
    
         "fuente": "Wallapop",
    
@@ -102,18 +90,6 @@
    
         
        
-       },
-       {
-        "titulo": "",
-        "fecha": "",
-   
-        "descripcion": "",
-   
-        "fuente": "",
-   
-        "precio": ""
-   
-        
-       
        }
+      
 ]

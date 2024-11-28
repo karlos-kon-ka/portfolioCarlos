@@ -29,6 +29,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.28.0",
     "react-slick": "^0.30.2",
+    "react-typewriter-effect": "^1.1.0",
     "scrollmonitor": "^1.2.11",
     "skeleton": "^0.1.2",
     "slick-carousel": "^1.8.1"

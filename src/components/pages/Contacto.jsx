@@ -24,10 +24,10 @@ function Contacto() {
    
     emailjs
       .send(
-        'your_service_id', 
-        'your_template_id', 
+        'service_xz5t8cp', 
+        'template_37lsaoa', 
         formData,
-        'your_user_id' 
+        'RGbEBrYjOjFuBowtP' 
       )
       .then(
         (response) => {
@@ -58,7 +58,7 @@ function Contacto() {
           ¡Trabajemos juntos!
         </Typography>
         <Typography variant="body1" align="center" sx={{ mb: 4 }}>
-          Estoy aquí para ayudarte a convertir tus ideas en realidad. Llena el formulario o envíame un mensaje directamente. 
+          Estoy aquí para convertir tus ideas en realidad. Llena el formulario o envíame un correo directamente. 
         </Typography>
       </motion.div>
 
@@ -121,9 +121,9 @@ function Contacto() {
         <Box sx={{ textAlign: 'center', mt: 6 }}>
           <Typography variant="h6">Información de contacto</Typography>
           <Typography variant="body1">
-            📧 Email: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+            📧 Gmail: <a href="mailto:tucorreo@ejemplo.com">trabajosproject1@gmail.com</a>
           </Typography>
-          <Typography variant="body1">📞 Teléfono: +34 123 456 789</Typography>
+          
         </Box>
       </motion.div>
 
@@ -156,14 +156,7 @@ function Contacto() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.5 }}
       >
-        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 4 }}>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <Button variant="outlined">LinkedIn</Button>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <Button variant="outlined">GitHub</Button>
-          </a>
-        </Box>
+       
       </motion.div>
     </section>
   );

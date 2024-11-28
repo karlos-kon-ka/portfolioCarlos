@@ -5,7 +5,7 @@ body {
     height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
     display: flex;
     flex-direction: column; /* Hace que los hijos (contenido y footer) se organicen en una columna */
-    background: radial-gradient(rgb(170, 142, 116), rgb(230, 230, 152));
+    background: radial-gradient(rgba(151, 149, 147, 0.747), rgb(152, 186, 230));
   }
   
  
@@ -17,6 +17,7 @@ body {
   .footer {
     background-color: #333;
     color: #fff;
+    font-family: "Manrope", sans-serif;
     padding: 20px 0;
     text-align: center;
     margin-top: auto; /* Asegura que el footer se pegue al fondo */

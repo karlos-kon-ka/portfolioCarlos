@@ -35,8 +35,7 @@ function Experiencias() {
       <Box sx={{ padding: 4 }}>
         <Typography
           variant="h3"
-          component="h1"
-          color="primary"
+          
           className="exp-titulo"
           align="center"
           gutterBottom
@@ -67,7 +66,7 @@ function Experiencias() {
                   },
                 }}
               >
-                <Typography variant="h6" color="textSecondary" gutterBottom>
+                <Typography variant="h6" className="titulo_expe"  gutterBottom>
                   {exp.titulo}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 2 }}>

@@ -58,6 +58,7 @@ nav a:hover {
     margin-top: 20px;
 }
 
+
 nav a:hover::before {
     width: 100%;
 }
@@ -92,8 +93,11 @@ nav a.active {
 }
 
 .contacto-section{
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 16px;
+  
 }
 
 
@@ -105,7 +109,22 @@ nav a.active {
     opacity: 1;
   }
 }
-
+.exp-titulo{
+ 
+  padding: 6px;
+  width: 100%;
+  border-radius: 6px;
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+.titulo_expe{
+  background-color: #4b4545;
+  padding: 15px;
+  color: #e2dcdc;
+  border-radius: 6px;
+  width: 100%;
+}
 
 .arrow-btn {
   background-color: #333;
@@ -164,6 +183,9 @@ nav a.active {
     align-items: center;
     padding: 40px;
     background-color: #f5f5f5;
+    border-radius: 16px;
+    margin-top: 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.685);
   }
   
   .yo-intro {
@@ -178,7 +200,13 @@ nav a.active {
     object-fit: cover;
     margin-bottom: 15px;
   }
-  
+  .centered-text {
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+              /* Ocupa toda la altura de la ventana */
+    text-align: center;       /* Centra el texto dentro del contenedor */
+  }
   .yo-title {
     font-size: 24px;
     font-weight: bold;
@@ -222,8 +250,25 @@ nav a.active {
   font-family: "Manrope", sans-serif;
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 20px;
   padding: 50px;
+  background-color: #f5f5dc; 
+  color: #345678;
+
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px white;
   text-align: center;
+}
+.rama-container h2{
+  background-color: #e7e2e2;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #0073e6;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.733);
 }
 
 
@@ -235,9 +280,9 @@ nav a.active {
 }
 
 .rama-item {
-  background-color: #b96262;
+  background-color: #e2dcdc;
   border-radius: 10px;
-  color: #f0f0f0;
+  
   width: 250px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.685);
@@ -270,7 +315,7 @@ nav a.active {
 @media (max-width: 700px) {
   .rama-items {
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
   }
 
 
@@ -302,10 +347,19 @@ nav a.active {
     transform: scale(1.05);
   }
   .yo-cards {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dos columnas dinámicas */
     gap: 8px; /* Espaciado entre tarjetas */
     padding: 16px;
+  }
+  .rama-container h2{
+    background-color: #f0f0f0;
+    text-align: center;
+    
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.733);
   }
 
   
@@ -334,6 +388,27 @@ nav a.active {
     font-size: 20px;
     font-weight: 500;
     color: #555;
+  }
+  .arrow-btn {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 15px;
+    user-select: none; /* No se podrá seleccionar el texto en este contenedor */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s forwards; /* Aparece gradualmente */
+    transition: opacity 0.5s ease; /* Suaviza el cambio de opacidad */
+    cursor: pointer;
+    border: none;
+    z-index: 55;
+    outline: none; 
+  }
+  
+  
+  .arrow-btn:hover {
+    opacity: 0.8;
+    user-select: none; 
+    outline: none; 
+    
   }
   
 

@@ -1,7 +1,7 @@
-import { useState, memo, lazy, Suspense } from 'react';
+import { useState, memo, Suspense, lazy } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-
-// Iconos
+import Typewriter from 'react-typewriter-effect';
+// Carga perezosa de los iconos
 const FaLaptopCode = lazy(() => import('react-icons/fa').then((mod) => ({ default: mod.FaLaptopCode })));
 const FaServer = lazy(() => import('react-icons/fa').then((mod) => ({ default: mod.FaServer })));
 const FaShieldAlt = lazy(() => import('react-icons/fa').then((mod) => ({ default: mod.FaShieldAlt })));
@@ -17,19 +17,29 @@ function Rama() {
 
   const onDragEnd = (result) => {
     const { destination, source } = result;
-    if (!destination || destination.index === source.index) return; // No hacer nada si no hay destino o el ítem no cambió de lugar
-  
-    const itemsCopy = Array.from(items); // Hacer una copia del array original
-    const [removed] = itemsCopy.splice(source.index, 1); // Eliminar el ítem de su posición original
-    itemsCopy.splice(destination.index, 0, removed); // Insertar el ítem en su nueva posición
-  
-    setItems(itemsCopy); // Actualizar el estado con el nuevo orden
+    if (!destination || destination.index === source.index) return;
+
+    const itemsCopy = Array.from(items);
+    const [removed] = itemsCopy.splice(source.index, 1);
+    itemsCopy.splice(destination.index, 0, removed);
+
+    setItems(itemsCopy);
   };
 
   return (
     <div className="rama-container">
-      <h2>Áreas de Dominio</h2>
-      
+      {/* Título con el efecto de máquina de escribir */}
+      <h2>
+        <Suspense fallback={<div>Cargando efecto...</div>}>
+          <Typewriter
+            text="Áreas de Trabajos"
+            cursorColor="black"
+            speed={100}
+            typingDelay={1000}
+          />
+        </Suspense>
+      </h2>
+
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="droppable" direction="horizontal">
           {(provided) => (

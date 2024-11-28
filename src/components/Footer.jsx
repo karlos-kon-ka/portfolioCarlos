@@ -9,7 +9,7 @@ function Footer() {
           <a href="https://www.linkedin.com/in/tu-perfil-linkedin" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a href="https://github.com/tu-usuario-github" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/karlos-kon-ka" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </div>
